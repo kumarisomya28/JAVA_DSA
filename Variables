@@ -1,0 +1,49 @@
+Q1).Take 2 integer values in two variables X and Y and print their product?
+ public static void main(String[] args) {
+        int X=2;
+        int Y=4;
+        System.out.print(X*Y);
+
+    }
+
+Q2).Print the ASCII of character 'U'?
+ public static void main(String[] args){
+        int x='U';
+        System.out.print("The ascii value of U is:"+x);
+
+
+    }
+
+Q3).Write a java program to take the length and breadth of a rectangle and print its area.
+public static void main(String[] args) {
+        int breadth=4;
+        System.out.println("The lenth is :"+length);
+        System.out.println("The breadth is :"+breadth);
+        int area =length*breadth;
+        System.out.println("The area is :"+area);
+
+
+    }
+
+Q4).Write a java program to calculate the cube of a number.
+public static void main(String[] args) {
+          int x=4;
+          int cube=x*x*x;
+          System.out.println("The side is :"+x);
+          System.out.println("The cube is: "+cube);
+
+    }
+Q5).write a java program to swap two numbers with the help of a third variable.
+public static void main(String[] args) {
+        int num1=2;
+        int num2=3;
+        System.out.println("The first number before swap is :" +num1);
+        System.out.println("The second number before swap is :" +num2);
+        int temp;
+        temp=num1;
+        num1=num2;
+        num2=temp;
+        System.out.println("The first number after swap is:"+num1);
+        System.out.println("The Second number after swap is :"+num2);
+
+    }
