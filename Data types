@@ -1,0 +1,43 @@
+Q1).primitive Data types?
+public static void main(String args[]){
+        byte mynum1=100;
+        Short mynum2=500;
+        int mynum3=5;
+        long mynum4=15000000000l;
+        float myfloatnum=5.99f;
+        double mynum5=5.75d;
+        char myletter='D';
+        boolean mybool=true;
+        String mytext="Hello";
+        System.out.println(mynum1);
+        System.out.println(mynum2);
+        System.out.println(mynum3);
+        System.out.println(mynum4);
+        System.out.println(myfloatnum);
+        System.out.println(mynum5);
+        System.out.println(myletter);
+        System.out.println(mybool);
+        System.out.println(mytext);
+
+
+    }
+
+Q2).widening Casting?
+public static void main(String args[]){
+        int myint=9;
+        double myDouble=myint;
+        System.out.println(myint);
+        System.out.println(myDouble);
+
+
+    }
+Q3).Narrowing Casting?
+public static void main(String args[]){
+        double myDouble=9.78d;
+        int myint=(int)myDouble;
+        System.out.println(myDouble);
+        System.out.println(myint);
+
+
+    }
+
