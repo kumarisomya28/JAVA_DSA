@@ -1,0 +1,107 @@
+Q1).Adding two integers entered by the user.
+public static void main(String[]args){
+     System.out.println("enter two number to calculate there sum:");
+                Scanner Sc=new Scanner(System.in);
+        int num1=Sc.nextInt();
+        int num2=Sc.nextInt();
+
+        int sum=num1+num2;
+        System.out.println("the sum of two number is:" +sum);
+  }
+
+
+
+
+Q2).Calculate Simple Interest?
+public static void main(String[]args){
+       
+        Scanner Sc=new Scanner (System.in);
+        System.out.println("enter the principal amout:");
+        double principal=Sc.nextDouble();
+        System.out.println("enter the rate:");
+        double rate=Sc.nextDouble();
+        System.out.println("enter the time:");
+        Double time=Sc.nextDouble();
+        Double interest=(principal*rate*time/100);
+        System.out.println("rate:"+rate);
+        System.out.println("principal:"+principal);
+        System.out.println("time:"+time);
+        System.out.println("interest:"+interest);
+}
+
+Q3).Read Character using Scanner class.
+public static void main(String[]args){
+    Scanner Sc=new Scanner(System.in);
+      char ch=Sc.next().charAt(4);
+      System.out.println("char="+ch);
+}
+
+Q4).Enter cost of 3 items from the user a pencil,a pen,and an eraser.You have to output the total cost of the items back to the user as their bill.(add on: you can try adding 18% GST tax to the items in the bill 
+as an advanced problem).
+public static void main(String[]args){
+        Scanner Sc= new Scanner(System.in);
+        float pencil=Sc.nextFloat();
+        float pen=Sc.nextFloat();
+        float eraser=Sc.nextFloat();
+        float total=pencil+pen+eraser;
+        System.out.println("bill is:"+total);
+        float newtotal=total+(0.18f*total);
+        System.out.println("bill is 18% tax :"+newtotal);
+  }
+Q5).Input name,roll number and field of intrest from user and print in the format below:
+    Name:XYZ,Roll number:XYZ,field of interest:XYZ.
+public static void main(String[]args){
+Scanner Sc=new Scanner(System.in);
+        String first_name=Sc.next();
+        String last_name=Sc.next();
+        int roll_number=Sc.nextInt();
+        String field_of_interest=Sc.next();
+        System.out.println("name:"+first_name+last_name);
+        System.out.println("roll number:"+roll_number);
+        System.out.println("field of interest:"+field_of_interest);
+}
+Q6).Input two different String and print them in same line.
+Input:LEVEL
+      UP
+public static void main(String[] args) {
+
+
+        Scanner sc = new Scanner(System.in);
+        String first = sc.nextLine();
+        String last = sc.nextLine();
+        System.out.println(first + last);
+
+    }
+Q7).If the marks of Robert in three Subjects are entered through keyboard(each out of 100),
+    Write a program to Calculate his total marks and percentage marks.
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int mark1=sc.nextInt();
+        int mark2=sc.nextInt();
+        int mark3=sc.nextInt();
+        int total_marks=mark1+mark2+mark3;
+        int percentage=(total_marks/3);
+        System.out.println(total_marks);
+        System.out.println(percentage +"%");
+
+    }
+Q8).Given two numbers,return their sum in the following format:int t representing number of test cases T lines of two integers representing the numbers to be added:
+      public static void main(String[]args){
+     Scanner Sc=new Scanner(System.in);
+        int t=Sc.nextInt();
+        for(int i=1;i<=t;i++) {
+            int a = Sc.nextInt();
+            int b = Sc.nextInt();
+            System.out.println(a+b);
+        }
+        }
+
+Q9).Given few lines of input(number of lines unknown) where each lines has two strings,concatenate the strings.
+     public static void main(String[]args) {
+Scanner sc=new Scanner (System.in);
+        while(sc.hasNextLine()){
+            String a= sc.next();
+            String b=sc.next();
+            System.out.println(a+b);
+        }
+  }
