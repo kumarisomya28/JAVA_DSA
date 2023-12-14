@@ -1,0 +1,123 @@
+Q1).Add variable and a value,or a variable and another variable.
+ public static void main(String[]args){
+       int sum1=100+50;
+        int sum2=30+sum1;
+        int sum3=sum2+sum1;
+        System.out.println(sum1);
+        System.out.println(sum2);
+        System.out.println(sum3);
+}
+
+  Q2).Application of all Arithmetic operators.
+    public static void main(String[]args){
+       int x=5,y=2;
+        System.out.println(x+y);
+        System.out.println(x-y);
+        System.out.println(x*y);
+        System.out.println(x/y);
+        System.out.println(x%y);
+        System.out.println(++y);
+        System.out.println(--x);
+  }
+
+Q3).Application of all Relational operators.
+     public static void main(String[]args){
+       int x=10,y=5;
+      System.out.println(x==y);
+        System.out.println(x!=y);
+        System.out.println(x<y);
+        System.out.println(x>y);
+        System.out.println(x<=y);
+        System.out.println(x>=y);
+}
+
+Q4).Application of all Logical operators.
+  public static void main(String[]args){
+        int p=15,q=10,r=5;
+        System.out.println((p>q)&&(p>r));
+        System.out.println((p>q)&&(p<r));
+        System.out.println((r<q)||(p<q));
+        System.out.println((p>q)||(p>r));
+        System.out.println((p<q)||(p<r));
+        System.out.println(!(p==q));
+        System.out.println(!(p>q));
+}
+
+
+Q5).Application of all Assignment operators.
+     public static void main(String[]args){
+       int p=10,q;
+        q=p;
+        System.out.println(q);
+        q+=p;
+        System.out.println(q);
+        q-=p;
+        System.out.println(q);
+        q*=p;
+        System.out.println(q);
+        q/=p;
+        System.out.println(q);
+        q%=p;
+        System.out.println(q);
+        q&=p;
+        System.out.println(q);
+        q|=p;
+        System.out.println(q);
+        q^=p;
+        System.out.println(q);
+        q>>=p;
+        System.out.println(q);
+        q<<=p;
+        System.out.println(q);
+  }
+
+Q6).Unary Operators.
+    public static void main(String[]args){
+    int p=5;
+       System.out.println("post Increment operator ");
+       System.out.println(p++);
+       int q=5;
+       System.out.println("pre Increment operator ");
+       System.out.println(++q);
+
+
+    }
+Q7).Bitwise operators.
+       public static void main(String[]args){
+       int p=5;
+       System.out.println(p<<2);
+   }
+
+Q8).Create a variable of type String and assign it a value.
+    public static void main(String[]args){
+     String greeting="hello";
+       System.out.println(greeting);
+ }
+
+Q9).String length.
+   public static void main(String[]args){
+    String txt="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+       System.out.println("The length of the text String is:" +txt.length());
+ }
+
+Q10).String concatenation.
+public static void main(String[]args){
+    String firstname="JOHN";
+       String lastname="DOE";
+       System.out.println(firstname+"  "+lastname);
+ }
+Q11).Boolean operator.
+  public static void main(String[]args){
+      boolean isJavafun= true ;
+       boolean isfishTasty=false;
+       System.out.println(isJavafun);
+       System.out.println(isfishTasty);
+
+ }
+Q12).Use the '>=' comparison operator to find out if the age (25) is greater than OR equal to the voting age limit,which is set to 18.
+ public static void main(String[]args){
+int myage=25;
+       int votingage=18;
+       System.out.println(myage>=votingage);
+       
+}
