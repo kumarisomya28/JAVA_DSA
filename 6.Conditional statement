@@ -86,3 +86,34 @@ Q7).Take values of length and breadth of a rectangle from user and check if it i
 
 Q8).Take two int values from user and print greatest among them.
        public static void main(String[] args) {
+       Scanner Sc=new Scanner(System.in);
+        System.out.println("num1= ");
+        int num1=Sc.nextInt();
+        System.out.println("num 2= ");
+        int num2=Sc.nextInt();
+
+            if(num1>num2) {
+                System.out.println("num1");
+            }
+                else{
+                System.out.println("num2");
+
+                }
+            }
+
+Q9).Write a java program that takes a year from the user and print whether that year is a leap or not.
+       public static void main(String[] args) {
+         Scanner Sc=new Scanner(System.in);
+        System.out.println("Input the year:");
+        int year=Sc.nextInt();
+        boolean x=(year%4)==0;
+        boolean y=(year%100)!=0;
+        boolean z=((year%100==0)&&(year%400==0));
+        if(x&&(y||z)) {
+            System.out.println(year + "is a leap year");
+        }
+        else{
+            System.out.println(year+"is not a leap year");
+            
+        }
+    }
