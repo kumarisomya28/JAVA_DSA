@@ -31,15 +31,15 @@ Q3).Else Statement.
 
     }
 
-Q4).Print "odd" if the input valuse is odd,otherwise print "even".
+Q4).Print "odd" if the input value is odd,otherwise print "even".
      public static void main(String[] args) {
     Scanner Sc=new Scanner(System.in);
         System.out.println("Enter the number:");
         int num=Sc.nextInt();
-        if(num%2==0) {
-            System.out.println("Even");
+        if(num%2!==0) {
+          System.out.println("odd");
         }else{
-            System.out.println("odd");
+           System.out.println("Even");
         }
 
 }
@@ -66,4 +66,23 @@ Q6).Ternary Operator.
         String result;
         result=(time<18)?"Good day.":"Good evening.";
         System.out.println(result);
- 
+       }
+
+
+Q7).Take values of length and breadth of a rectangle from user and check if it is square or not.
+         public static void main(String[] args) {
+        Scanner Sc=new Scanner(System.in);
+        System.out.println("length = ");
+        int length=Sc.nextInt();
+        System.out.println("breadth = ");
+        int breadth=Sc.nextInt();
+        if(length==breadth){
+            System.out.println("Square");
+        }
+        else{
+            System.out.println("Rectangle");
+        }
+}
+
+Q8).Take two int values from user and print greatest among them.
+       public static void main(String[] args) {
