@@ -1,0 +1,64 @@
+Q1). if Statement.
+public static void main(String[] args) {
+        if(20>18){
+            System.out.println("20 is greater than 18");
+        }
+}
+
+Q2). print "pass" if input marks is greater than 80.
+     public static void main(String[] args) {
+        Scanner Sc =new Scanner (System.in);
+        System.out.println("Enter the marks:");
+        int marks=Sc.nextInt();
+        if(marks>80){
+            System.out.println("pass");
+        }
+
+
+    }
+
+Q3).Else Statement.
+ public static void main(String[] args) {
+       int time=20;
+        if(time<18){
+            System.out.println("Good day");
+
+        }
+        else{
+            System.out.println("Good evening");
+        }
+
+
+    }
+
+Q4).Print "odd" if the input valuse is odd,otherwise print "even".
+     public static void main(String[] args) {
+    Scanner Sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int num=Sc.nextInt();
+        if(num%2==0) {
+            System.out.println("Even");
+        }else{
+            System.out.println("odd");
+        }
+
+}
+
+Q5).Find if the input Character is 'a' or not.
+     public static void main(String[] args) {
+         Scanner Sc=new Scanner(System.in);
+        char ch;
+        System.out.println("Enter the Character:");
+        ch=Sc.next().charAt(0);
+        if(ch=='a') {
+            System.out.println("ch is an alphabet");
+        }
+        else{
+            System.out.println("ch is not an alphabet");
+
+        }
+
+}
+
+Q6).Ternary Operator.
+      public static void main(String[] args) {
