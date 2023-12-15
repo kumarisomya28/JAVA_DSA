@@ -117,3 +117,59 @@ Q9).Write a java program that takes a year from the user and print whether that 
             
         }
     }
+Q10).Calculator.
+   public static void main(String[] args) {
+        int a=Sc.nextInt();
+        int b=Sc.nextInt();
+        char operator=Sc.next().charAt(0);
+        switch (operator ){
+            case'+':
+                System.out.println(a+b);
+                break;
+            case'-':
+                System.out.println(a-b);
+                break;
+            case'*':
+                System.out.println(a*b);
+                break;
+            case'/':
+                System.out.println(a/b);
+                break;
+            case'%':
+                System.out.println(a%b);
+                break;
+            default:
+                System.out.println("Wrong operator");
+
+
+        }
+    }
+
+Q11).GRADE           SCORE
+       A              80-100
+       B              60-40
+       C              40-60
+       D               <40
+Print the GRADE according to the marks obtained.
+
+ public static void main(String[] args) {
+Scanner Sc = new Scanner(System.in) ;
+            int score = Sc.nextInt();
+            if(score>80){
+                System.out.println("A");
+
+            }
+            else if(score>60){
+                System.out.println("B");
+
+            }
+            else if(score>40){
+                System.out.println("C");
+            }
+            else{
+                System.out.println("D");
+            }
+
+
+        }
+
