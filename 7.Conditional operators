@@ -1,0 +1,96 @@
+Q1).Print the number if the input value is greater than 5 and less than 10.
+   public static void main(String[] args) {
+        Scanner Sc=new Scanner(System.in);
+        int val=Sc.nextInt();
+        if(val>5&& val<10){
+            System.out.println(val);
+
+        }
+    }
+
+Q2).Write a program to print the value of input.if is even and divisible by 3.
+        public static void main(String[] args) {
+          Scanner Sc=new Scanner(System.in);
+    int value=Sc.nextInt();
+    if(value%2==0&& value%3==0){
+        System.out.println(value);
+    }
+}
+
+Q3).Write a program to print the value if it is divisible by 3 or 5.
+           public static void main(String[] args) {
+            Scanner Sc=new Scanner(System.in);
+             int value=Sc.nextInt();
+             if(value%5==0||value%3==0){
+              System.out.println("Answer is"+ value);
+
+    }
+}
+
+Q4).Print the number if the input value is greater than 10 or less than 5.
+       public static void main(String[] args) {
+    Scanner Sc=new Scanner(System.in);
+    int value=Sc.nextInt();
+    if(value<5||value>10){
+        System.out.print("Answer is"+ value);
+
+    }
+}
+
+Q5).Write a program using Switch Statement to check if the input lowercase character is vowel or consonant.
+    public static void main(String[] args) {
+    Scanner Sc=new Scanner(System.in);
+    char vowel_consonent=Sc.next().charAt(0);
+    switch(vowel_consonent){
+        case 'a':
+            System.out.println("Vowel");
+            break;
+        case'e':
+            System.out.println("vowel");
+            break;
+        case 'i':
+            System.out.println("vowel");
+            break;
+        case 'o':
+            System.out.println("vowel");
+            break;
+        case'u':
+            System.out.println("vowel");
+            break;
+        default:
+            System.out.println("Consonant");
+
+
+    }
+}
+
+Q6).Write a program to print the day name based upon the day number.i.e, 1.Monday , 2.Tuesday , etc.
+   public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int day = sc.nextInt();
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("thursday");
+                break;
+            case 5:
+                System.out.println("friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("sunday");
+                break;
+            default:
+                System.out.println("Invalid day number");
+        }
+    }
