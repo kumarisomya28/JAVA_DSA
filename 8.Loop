@@ -129,3 +129,68 @@ Q6).Write a program that reads a set of integers, and then prints the sum of the
         System.out.println("Sum of even numbers: " + evenSum);
         System.out.println("Sum of odd numbers: " + oddSum);
     }  
+
+Q7).Write a program that prompts the user to input a positive integer. It should then output a message indicating whether the number is a prime number. 
+public static void main(String[] args)
+    {
+        Scanner console = new Scanner(System.in);
+     
+        int number;
+        
+        System.out.print("Enter the positive integer ");
+        number = console.nextInt();
+        
+        boolean flag = true;
+        
+        for(int i = 2; i < number; i++)
+	{
+	    if(number % i == 0)
+            {
+                flag = false;
+                break;
+            }
+        }
+
+	if(flag && number > 1)
+        {
+            System.out.println("Number is prime");
+        }
+	else
+        {
+            System.out.println("Number is not prime");
+        }
+        
+    }  
+
+Q8).Write a program to calculate HCF of Two given number.
+ public static void main(String[] args)
+    {
+        Scanner console = new Scanner(System.in);
+     
+        int dividend, divisor;
+        int remainder, hcf = 0;
+        
+        System.out.print("Enter the first number ");
+        dividend = console.nextInt();
+        
+        System.out.print("Enter the second number ");
+        divisor = console.nextInt();        
+        
+        do
+	{
+            remainder = dividend % divisor;
+            
+            if(remainder == 0)
+            {
+                hcf = divisor;
+            }
+	    else
+            {
+                dividend = divisor;
+                divisor = remainder;
+	    }
+            
+        }while(remainder != 0);
+
+        System.out.println("HCF: " + hcf);
+    }  
