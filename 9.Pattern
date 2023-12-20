@@ -63,4 +63,20 @@ Q1).
     public static void main(String[] args) {
         inverted_trianle(6);
     }
-                      
+
+
+Q4) 
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
+
+
+
+  
