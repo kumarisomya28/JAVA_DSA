@@ -46,4 +46,44 @@ Q3).Example of java array,where declare,instantiate,initialize and traverse an a
         }
 
     }
-Q4).
+Q4). write the code to find a key in the given array of int type.
+   public static int linearSearch(int number[], int key) {
+        for (int i = 0; i < number.length; i++) {
+            if (number[i] == key) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    public static void main(String[] args) {
+      int number[] = {2, 4, 6, 8, 10, 12, 14, 16};
+        int key = 10;
+        int index = linearSearch(number, key);
+        if (index == -1) {
+            System.out.println("NOT found");
+        } else {
+            System.out.println("key is at index :" + index);
+        }
+    }
+Q5).Find the largest and smallest value in an int type of arrays.
+    public static int getLargest(int numbers[]) {
+        int largest = Integer.MIN_VALUE;
+        int smallest=Integer.MAX_VALUE;
+        for (int i = 0; i < numbers.length; i++) {
+            if (largest < numbers[i]) {
+                largest = numbers[i];
+            }
+            if(smallest>numbers[i]){
+                smallest=numbers[i];
+            }
+        }
+        System.out.println("smallest value is: "+smallest);
+        return largest;
+    }
+
+
+    public static void main(String[] args) {
+        int numbers[] = {1, 2, 6, 3, 5};
+        System.out.println("largest value is: "+getLargest(numbers) );
+    }
+   
