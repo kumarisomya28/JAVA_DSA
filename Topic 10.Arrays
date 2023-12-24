@@ -11,3 +11,6 @@ Q1).Print an array in which inputs are taken from users and also print the perce
             int percentage = (marks[0] + marks[1] + marks[2]) / 3;
             System.out.println("percentage =" + percentage + "%");
         }
+Q2).Find the index of element in a given array.
+  key=10
+     |2 |4 |6 |8 |10 |12 |14 |16|
