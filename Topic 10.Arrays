@@ -134,7 +134,7 @@ Q7).Reverse an  int. type of Array.
         }
         System.out.println();
     }
-Q8).Print pairs in int.type of arrays and also find the total numbers of pairs.
+Q8).Print pairs in int.type of arrays and also calculate the total numbers of pairs.
    public static void printPairs(int numbers[]){
     int tp=0;
         for(int i=0;i<numbers.length;i++){
@@ -152,5 +152,30 @@ Q8).Print pairs in int.type of arrays and also find the total numbers of pairs.
         int numbers[]={2,4,6,8,10};
         printPairs(numbers);
     }
+
+
+Q9).Print subarrays of int. type of array and also calculate the total subarrays.
+public static void printSubarrays(int numbers[]){
+     int ts=0;
+    for(int i=0;i<numbers.length;i++){
+        int start=i;
+        for(int j=i;j<numbers.length;j++){
+            int end=j;
+            for(int k=start;k<=end;k++){
+                System.out.print(numbers[k]+"  ");
+
+            }
+            ts++;
+            System.out.println();
+        }
+        System.out.println();
+    }
+    System.out.println("total subarrays ="+ts);
+}
+      public static void main(String[] args) {
+        int numbers[]={2,4,6,8,10};
+        printSubarrays(numbers);
+    }
+
      
    
