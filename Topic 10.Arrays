@@ -46,7 +46,7 @@ Q3).Example of java array,where declare,instantiate,initialize and traverse an a
         }
 
     }
-Q4). write the code to find a key in the given array of int type.
+Q4). write the code to find a key in the given array of int. type.
    public static int linearSearch(int number[], int key) {
         for (int i = 0; i < number.length; i++) {
             if (number[i] == key) {
@@ -65,7 +65,7 @@ Q4). write the code to find a key in the given array of int type.
             System.out.println("key is at index :" + index);
         }
     }
-Q5).Find the largest and smallest value in an int type of arrays.
+Q5).Find the largest and smallest value in an int. type of arrays.
     public static int getLargest(int numbers[]) {
         int largest = Integer.MIN_VALUE;
         int smallest=Integer.MAX_VALUE;
@@ -87,7 +87,7 @@ Q5).Find the largest and smallest value in an int type of arrays.
         System.out.println("largest value is: "+getLargest(numbers) );
     }
    
-Q6).Find the key for int type array using binary search.
+Q6).Find the key for int. type array using binary search.
   public static int binarySearch(int numbers[],int key){
         int start=0,end=numbers.length-1;
         while(start<=end){
@@ -112,7 +112,7 @@ Q6).Find the key for int type array using binary search.
         int key=8;
         System.out.println("index for key is:"+binarySearch(numbers,key));
     }
-Q7).Reverse an  int type of Array.
+Q7).Reverse an  int. type of Array.
     public static void reverse(int numbers[]){
         int first=0,last=numbers.length-1;
         while(first<last){
