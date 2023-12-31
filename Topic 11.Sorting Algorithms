@@ -1,4 +1,4 @@
-Q1).Bubble Sort.
+Q1). Sort a given  array in ascending order with the help of Bubble sort.
      
       public static void bubbleSort(int arr[]){
         for(int turn=0;turn<arr.length-1;turn++){
@@ -27,7 +27,7 @@ Q1).Bubble Sort.
     }
 
 
-Q2). Sort a given array in ascending order with Selection sort?
+Q2). Sort a given array in ascending order with Selection sort.
 
   public static void SelectionSort(int arr[]) {
         // for no. of turns.
