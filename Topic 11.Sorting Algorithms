@@ -178,4 +178,102 @@ Q5).Sort a given array in descending order with insertion sort?
         PrintArr(arr);
 
     }
+Q6) Use Array.sort technique for Sorting an array in ascending order?
+
+
+  import java.util.Arrays;
+public class sorting {
+    public static void PrintArr(int arr[]) {
+        for (int i =0; i< arr.length;i++){
+            System.out.print(arr[i] +" ");
+        }
+        System.out.println();
+
+    }
+    public static void main(String[] args) {
+        int arr[] = {5, 4, 1,3,2};
+        Arrays.sort(arr);
+        PrintArr(arr);
+
+    }
+}
+
+
+Q7) Use Array.sort technique to print sorted array but with starting index and ending index is also  passes as an arguments?
+
+
+ import java.util.Arrays;
+public class sorting {
+    public static void PrintArr(int arr[]) {
+        for (int i =0; i< arr.length;i++){
+            System.out.print(arr[i] +" ");
+        }
+        System.out.println();
+
+    }
+    public static void main(String[] args) {
+        int arr[] = {5, 4, 1,3,2};
+        Arrays.sort(arr,0,3  );
+        PrintArr(arr);
+
+    }
+}
+
+Q8)Use Array.sort technique for Sorting an array in descending order?
+
+
+  public static void PrintArr(Integer arr[]) {
+        for (int i =0; i< arr.length;i++){
+            System.out.print(arr[i] +" ");
+        }
+        System.out.println();
+
+    }
+    public static void main(String[] args) {
+        Integer arr[] = {5, 4, 1,3,2};
+        Arrays.sort(arr, Collections.reverseOrder());
+        PrintArr(arr);
+
+    }
+  
+
+Q9) sort an array in ascending order by Counting Sort?
+
+
+  import java.util.Arrays;
+public class sorting {
+    public static void countingSort(int arr[]){
+        int largest = Integer.MIN_VALUE;
+        for (int i = 0; i< arr.length;i++){
+            largest = Math.max(largest,arr[i]);
+        }
+        int count [] = new int[largest+1];
+        for (int i =0; i< arr.length;i++){
+            count[arr[i]]++;
+        }
+        //sorting
+        int j =0;
+        for (int i =0; i< count.length;i++){
+            while(count[i] >0){
+                arr[j] = i;
+                j++;
+                count[i]--;
+            }
+        }
+    }
+    public static void PrintArr(int arr[]) {
+        for (int i =0; i< arr.length;i++){
+            System.out.print(arr[i] +" ");
+        }
+        System.out.println();
+
+    }
+    public static void main(String[] args) {
+        int arr[] = {5, 4, 1,3,2};
+        countingSort(arr);
+        PrintArr(arr);
+
+    }
+}
+
 
