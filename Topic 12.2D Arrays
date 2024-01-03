@@ -1,4 +1,4 @@
-Q1) Print a 2d array , input is taken from user??
+Q1) Print a 2d array , input is taken from user.
 
    public static void main(String[] args) {
         int matrix [][] = new int [3][3];
@@ -21,7 +21,7 @@ Q1) Print a 2d array , input is taken from user??
         }
     }
 
- Q2) Print a 2d array in which the value is taken from user and also print the cell of the key??
+ Q2) Print a 2d array in which the value is taken from user and also print the cell of the key.
 
 
   public static boolean Search(int matrix[][], int key){
