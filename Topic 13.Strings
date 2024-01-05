@@ -32,4 +32,22 @@ Q4) Concatenate Strings and print it.
         System.out.println(fullName);
     }
 
+Q5) print the each character of the string by using charAt.
+
+      public static void Printletters(String str) {
+        for (int i=0; i<str.length();i++){
+            System.out.print(str.charAt(i)+" ");
+        }
+        System.out.println();
+    }
+
+
+    public static void main(String[] args) {
+        String firstName = "kumari";
+        String lastName = "Somya";
+        String fullName = firstName+" "+lastName;
+
+        Printletters(fullName);
+    }
+
   
