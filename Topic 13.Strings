@@ -5,7 +5,6 @@ Q1) Take a input string from user and print it .
         String name = sc.next(); //this function is used only for a single word it doesn't contain the word after space
         System.out.println(name);
     }
-}
 
 
 Q2)Take a input string(two words or a line) from user and print it.
