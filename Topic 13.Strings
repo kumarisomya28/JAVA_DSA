@@ -17,3 +17,11 @@ Q2)Take a input string(two words or a line) from user and print it.
     }
 
 
+Q3)Find the length of the String by using length() function.
+   
+     public static void main(String[] args) {
+        String fullName = "Kumari somya";
+        System.out.println(fullName.length());
+    }
+
+
