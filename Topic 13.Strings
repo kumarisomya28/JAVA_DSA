@@ -23,4 +23,13 @@ Q3)Find the length of the String by using length() function.
         System.out.println(fullName.length());
     }
 
+Q4) Concatenate Strings and print it.
+  
+   public static void main(String[] args) {
+        String firstName = "kumari";
+        String lastName = "Somya";
+        String fullName = firstName+" "+lastName;
+        System.out.println(fullName);
+    }
 
+  
