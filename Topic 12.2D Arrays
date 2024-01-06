@@ -187,7 +187,7 @@ Q1) Print a 2d array , input is taken from user.
         staircaseSearch(matrix,key);
     }
 
-Q7): Print the number of 7’s that are in the 2d array.
+Q7) Print the number of 7’s that are in the 2d array.
 Input - int[][] array = { {4,7,8},{8,8,7} }
 
    public static void main(String[] args) {
@@ -204,3 +204,16 @@ Input - int[][] array = { {4,7,8},{8,8,7} }
             }
             System.out.println("count of 7 is : " + countOf7);
         }
+
+Q8) Print out the sum of the numbers in the second row of the “nums” array.
+Input - int[][] nums = { {1,4,9},{11,4,3},{2,2,3} };
+
+       public static void main(String[] args) {
+         int[][] nums = { {1,4,9},{11,4,3},{2,2,3} };
+          int sum = 0;
+        //sum of 2nd row elements
+      for(int j=0; j<nums[0].length; j++) {
+      sum += nums[1][j];
+    }
+     System.out.println("sum is : " + sum);
+} 
