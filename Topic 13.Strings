@@ -98,3 +98,14 @@ Q7) Given a route containing 4 directions (E,W,N,S),find the shortest path to re
             System.out.println(getShortestPath(path));
 }
 
+Q8) String Functions for comparison.
+   public static void main(String[] args) {
+    String s1="Tony";
+    String s2="Tony";
+    String s3=new String("Tony");
+    if (s1.equals(s3)){
+        System.out.println("Strings are equal");
+    }else{
+        System.out.println("strings are not equal");
+    }
+}
