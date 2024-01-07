@@ -124,3 +124,13 @@ Q9) print the substring of String "HelloWorld".
     String str ="HelloWorld";
     System.out.println(subString(str,0,5));
     }
+
+Q10) print the substring using substring property of java.
+   
+   public static void main(String[] args) {
+    String str=new String("Rs 1500");
+    System.out.print("The original string is :");
+    System.out.println(str);
+    System.out.print("The extracted substring is: ");
+    System.out.println(str.substring(3));
+}
