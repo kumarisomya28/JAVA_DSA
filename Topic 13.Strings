@@ -150,3 +150,13 @@ Q11) for a given set of Strings,print the largest String.
         }
         System.out.println(largest);
     }
+
+Q12) print the characters and there length using the StringBuilder property of Strings.
+       public static void main(String[] args) {
+        StringBuilder sb =new StringBuilder();
+          for(char ch='a';ch<='z';ch++){
+             sb.append(ch);
+    }
+      System.out.println(sb);
+         System.out.println(sb.length());
+    }
