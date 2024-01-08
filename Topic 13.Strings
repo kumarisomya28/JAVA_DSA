@@ -221,7 +221,7 @@ Q15) Print how many times lowercase vowels occured in a String entered by the us
             System.out.println("count of vowels is :" + count);
         }
 
-Q16) : What will be the output of the following code?
+Q16) What will be the output of the following code?
        public class Solution {
         public static void main(String args[]) {
           String str = "ShradhaDidi";
@@ -231,3 +231,12 @@ Q16) : What will be the output of the following code?
     }
       }
 output:--False True
+
+Q17) What will be the output of the following code?
+     public class Solution {
+      public static void main(String args[]) {
+       String str = "ApnaCollege".replace("l", "");
+        System.out.println(str);
+        }
+        }
+output:--ApnaCoege
