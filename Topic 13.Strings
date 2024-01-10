@@ -394,3 +394,21 @@ Q22) Reverse words in a given String.
         System.out.println("After reversing words: ");
         System.out.print(result(st));
     }
+
+Q23) Find the largest odd number in String.
+    public static String maxOdd(String s)
+    {
+        for (int i = s.length() - 1; i >= 0; i--) {
+            if (s.charAt(i) % 2 != 0) {
+                String s1 = s.substring(0, i + 1);
+                return s1;
+            }
+        }
+        return "";
+    }
+    public static void main(String[] args) {
+
+        String s = "504";
+        String ans = maxOdd(s);
+        System.out.println(ans);
+    }
