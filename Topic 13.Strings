@@ -412,3 +412,28 @@ Q23) Find the largest odd number in String.
         String ans = maxOdd(s);
         System.out.println(ans);
     }
+
+Q24) Write a program for finding longest common prefix.
+   public String longestCommonPrefix(String[] arr)
+    {
+        int n = arr.length;
+        String result = arr[0];
+        for(int i = 1; i < n; i++){
+            while(arr[i].indexOf(result) != 0){
+                result = result.substring(0, result.length()-1);
+                if(result.isEmpty()){
+                    return "-1";
+                }
+            }
+        }
+        return result;
+    }
+
+    public static void main(String[] args)
+    {
+        Strings gfg = new Strings();
+        String[] input = {"geeksforgeeks", "geeks", "geek", "geezer"};
+        System.out.println( "The longest Common Prefix is : " +
+                gfg.longestCommonPrefix(input));
+    }
+  
