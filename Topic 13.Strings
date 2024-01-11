@@ -452,3 +452,26 @@ Q25) Check if given strings are rotations of each other or not.
             System.out.printf(
                     "Strings are not rotations of each other");
     }
+
+Q26) Sum of Beauty of All Substrings.
+     public int beautySum(String s) {
+       int totalBeauty = 0; 
+        int stringLength = s.length(); 
+           for (int i = 0; i < stringLength; ++i) {
+            int[] frequencyCount = new int[26];
+            for (int j = i; j < stringLength; ++j) {
+                ++frequencyCount[s.charAt(j) - 'a'];
+                int minFrequency = 1000, maxFrequency = 0;
+                for (int freq : frequencyCount) {
+                    if (freq > 0) {
+                        minFrequency = Math.min(minFrequency, freq);
+                        maxFrequency = Math.max(maxFrequency, freq);
+                    }
+                }
+             totalBeauty += maxFrequency - minFrequency;
+            }
+        }
+       return totalBeauty;
+}
+
+        
