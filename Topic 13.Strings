@@ -474,4 +474,5 @@ Q26) Sum of Beauty of All Substrings.
        return totalBeauty;
 }
 
+
         
