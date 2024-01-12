@@ -501,3 +501,14 @@ Q27) Count number of substrings with exactly k distinct characters.
                 + ob.countkDist(ch, k));
     }
         
+Q28) Number of substrings of a string.
+  static int countNonEmptySubstr(String str) {
+        int n = str.length();
+        return n * (n + 1) / 2;
+    }
+
+    public static void main(String args[]) {
+        String s = "abcde";
+        System.out.println(countNonEmptySubstr(s));
+
+    }
