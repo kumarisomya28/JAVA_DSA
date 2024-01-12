@@ -474,5 +474,30 @@ Q26) Sum of Beauty of All Substrings.
        return totalBeauty;
 }
 
-
+Q27) Count number of substrings with exactly k distinct characters.
+     int countkDist(String str, int k) {
+        int res = 0;
+        int n = str.length();
+        boolean seen[] = new boolean[26];
+        for (int i = 0; i < n; i++) {
+            int distCount = 0;
+            Arrays.fill(seen, false);
+            for (int j=i; j<n; j++) {
+                if (!seen[str.charAt(j) - 'a'])
+                    distCount++;
+                seen[str.charAt(j) - 'a'] = true;
+                if (distCount == k)
+                    res++;
+            }
+        }
+        return res;
+    }
+    public static void main(String[] args) {
+        Strings ob = new Strings();
+        String ch = "abcbaa";
+        int k = 3;
+        System.out.println("Total substrings with exactly " +
+                k +    " distinct characters : "
+                + ob.countkDist(ch, k));
+    }
         
