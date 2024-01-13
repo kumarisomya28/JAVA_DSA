@@ -556,4 +556,35 @@ Q29) Converting Roman Numerals to Decimal.
             String str = "MCMIV";
             System.out.println("Integer form of Roman Numeral" + " is " + ob.romanToDecimal(str));
         }
-    
+
+Q30) String to Integer (atoi).
+   static int myAtoi(String str) {
+        if (str.isEmpty()) {
+            return 0;
+        }
+        int index = 0;
+        int sign = 1;
+        int result = 0;
+        while (index < str.length() && str.charAt(index) == ' ') {
+            index++;
+        }
+        if (index < str.length() && (str.charAt(index) == '+' || str.charAt(index) == '-')) {
+            sign = (str.charAt(index) == '-') ? -1 : 1;
+            index++;
+        }
+        while (index < str.length() && Character.isDigit(str.charAt(index))) {
+            int digit = str.charAt(index) - '0';
+            if (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && digit > 7)) {
+                return (sign == 1) ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+            }
+            result = result * 10 + digit;
+            index++;
+        }
+        return result * sign;
+    }
+
+    public static void main(String[] args) {
+        String str = "8f9789";
+        int val = myAtoi(str);
+        System.out.println(val);
+    }
