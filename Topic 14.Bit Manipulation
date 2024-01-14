@@ -89,3 +89,20 @@ Q8) You have been given an integer 'N'.Your task is to return true if it is a po
       public static boolean isPowerOfTwo(int n) {
          return n > 0 && (n & (n - 1)) == 0;
     }
+
+Q9) For a given integer 'N', you have to return the number of set bits in the binary representation of the numbers from 1 to 'N'.
+     In a binary number '1' is considered as a set bit and '0' as not set.
+ 
+  public static int countSetBits(int n) {
+      int count = 0;
+    for (int i = 1; i <= n; i++) {
+     count += countSetBitsInRange(i);
+        }return count;
+    }
+  static int countSetBitsInRange(int num) {
+        int count = 0;
+    while (num > 0) {
+   count += num & 1;
+     num >>= 1;
+        } return count;
+    }
