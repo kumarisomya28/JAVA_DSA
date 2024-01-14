@@ -74,3 +74,10 @@ Q6) Given a number ‘N’ and a number ‘K’. Return true if ‘K’th bit of
     static boolean isKthBitSet(int n, int k) {
        return ((n >> (k - 1)) & 1) == 1;
     }
+
+Q7) You are given an integer 'N'.Return 'odd' if the given number 'N' is odd, else return 'even'.
+    
+    public static String oddEven(int N){
+         return (N % 2 == 0) ? "even" : "odd";
+    }
+
