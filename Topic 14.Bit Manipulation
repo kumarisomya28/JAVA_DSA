@@ -106,3 +106,23 @@ Q9) For a given integer 'N', you have to return the number of set bits in the bi
      num >>= 1;
         } return count;
     }
+
+Q10) The problem is to find the rightmost bit of a non-negative number 'N' that is currently unset (i.e., has a value of 0) in its binary representation and set it to 1.
+   Return the number after setting the rightmost unset bit of 'N'. If there are no unset bits in N's binary representation, then the number should remain unchanged.
+
+ public static int setBits(int N){
+       if (N == 0) {
+            return 1;
+        }
+
+        int mask = 1;
+        while ((N & mask) != 0) {
+            mask <<= 1;
+        }
+
+        if (mask > N) {
+            return N;  // No unset bit, return unchanged number
+        }
+
+        return N | mask;
+    }
