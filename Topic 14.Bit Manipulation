@@ -69,3 +69,8 @@ Q5) You have a 32-bit unsigned integer called 'num' and another integer called '
         System.out.println(result[0] + " " + result[1] + " " + result[2]);
     }
 
+Q6) Given a number ‘N’ and a number ‘K’. Return true if ‘K’th bit of number is set, else return false.
+
+    static boolean isKthBitSet(int n, int k) {
+       return ((n >> (k - 1)) & 1) == 1;
+    }
