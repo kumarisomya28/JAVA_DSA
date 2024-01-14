@@ -49,3 +49,23 @@ Q4) Clear ith Bit.
         public static void main(String[] args) {
         System.out.println(clearIthbit(10,1));
     }
+
+Q5) You have a 32-bit unsigned integer called 'num' and another integer called 'i'.
+    You need to perform the following operations on the 'num' integer based on the value of 'i':
+   1. Get the bit value at the "i"th position of "num".
+  2. Set the bit at the "i"th position of "num".
+  3. Clear the bit at the "i"th position of "num".
+
+ public static int[] bitManipulation(int num, int i) {
+        int[] result = new int[3];
+     result[0] = (num & (1 << (i - 1))) == 0 ? 0 : 1;
+      result[1] = num | (1 << (i - 1));
+      result[2] = num & ~(1 << (i - 1));
+       
+        return result;
+    }
+     public static void performBitManipulation(int num, int i) {
+        int[] result = bitManipulation(num, i);
+        System.out.println(result[0] + " " + result[1] + " " + result[2]);
+    }
+
