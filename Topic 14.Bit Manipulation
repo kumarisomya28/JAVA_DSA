@@ -127,7 +127,7 @@ Q10) The problem is to find the rightmost bit of a non-negative number 'N' that 
         return N | mask;
     }
 
-Q11) Clear ith bits.
+Q11) Clear last ith bits.
        public static int clearIthbits(int n,int i){
         int bitmask=(~0)<<i;
         return n & bitmask;
