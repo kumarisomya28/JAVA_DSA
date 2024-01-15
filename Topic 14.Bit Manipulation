@@ -210,3 +210,25 @@ Q16) Modular Exponential.
         int mod=powe(x,y,p);
         System.out.println("power is "+mod);
     }
+
+Q17) What is the value of x^x for any value of x?
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the value of x: ");
+    double x=sc.nextDouble();
+    double result=Math.pow(x,x);
+    System.out.println("The value of "+x+"^"+x+"is"+result);
+    sc.close();
+}
+
+Q18) Swap two numbers without using any third variable.
+    public static void main(String[] args) {
+    int a=5;
+    int b=10;
+    System.out.println("Before swapping :a= "+a+",b= "+b);
+    a=a^b;
+    b=a^b;
+    a=a^b;
+    System.out.println("After swapping := "+a+",b= "+b);
+}
+
