@@ -190,3 +190,23 @@ Q15) Fast Exponentiation.
     public static void main(String[] args) {
         System.out.println(FastExpo(3,5));
     }
+
+Q16) Modular Exponential.
+   static int powe(int x,int y,int p){
+        int res=1;
+        while(y>0){
+            if((y&1)!=0)
+                res=res*x;
+            y=y>>1;
+            x=x*x;
+        }
+        return res%p;
+    }
+
+    public static void main(String[] args) {
+        int x=2;
+        int y=5;
+        int p=13;
+        int mod=powe(x,y,p);
+        System.out.println("power is "+mod);
+    }
