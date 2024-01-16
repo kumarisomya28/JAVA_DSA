@@ -301,3 +301,23 @@ Q22) Given two integers dividend and divisor, divide two integers without using 
 
         System.out.println("Quotient: " + result);
     }
+
+Q23) You are given two integers 'A' and 'B'.Your objective is to determine the number of bit positions where the corresponding bits of ‘A’ and ‘B’ differ,
+     i.e., the number of bits that need to be flipped in ‘A’ to obtain ‘B’.
+    
+     public static int countBitsToFlip(int A, int B) {
+        int xorResult = A ^ B;
+        int count = 0;
+        while (xorResult != 0) {
+            count += xorResult & 1;
+            xorResult >>= 1;
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+        int A = 7;
+        int B = 12;
+        int result = countBitsToFlip(A, B);
+        System.out.println("Number of bits to flip: " + result);
+    }
+
