@@ -241,3 +241,11 @@ Q19) Add 1 to an integer using Bit manipulation.
         x = 0;
         System.out.println(x + " + " + 1 + " is " + -~x);
     }
+
+Q20) Convert uppercase characters to lowercase using bits.
+  public static void main(String[] args) {
+
+    for (char ch = 'A'; ch <= 'Z'; ch++) {
+        System.out.println((char)(ch | ' '));
+   }
+    }
