@@ -249,3 +249,55 @@ Q20) Convert uppercase characters to lowercase using bits.
         System.out.println((char)(ch | ' '));
    }
     }
+
+Q21) You are given two numbers 'a' and 'b' as input.You must swap the values of 'a' and 'b'.
+      public static void swapNumber(int[] a, int [] b) {
+       if (a.length != b.length) {
+            System.out.println("Arrays must have the same length for swapping.");
+            return;
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            // Swapping values using a temporary variable
+            int temp = a[i];
+            a[i] = b[i];
+            b[i] = temp;
+        }
+        
+    }
+
+Q22) Given two integers dividend and divisor, divide two integers without using multiplication, division, and mod operator.
+   The integer division should truncate toward zero, which means losing its fractional part.
+     For example, 8.345 would be truncated to 8, and -2.7335 would be truncated to -2.
+       Return the quotient after dividing dividend by divisor.
+    
+   public static int divide(int dividend, int divisor) {
+        if (divisor == 0) {
+            throw new IllegalArgumentException("Cannot divide by zero");
+        }
+        if (dividend == Integer.MIN_VALUE && divisor == -1) {
+            return Integer.MAX_VALUE;
+        }
+        int sign = (dividend < 0) ^ (divisor < 0) ? -1 : 1;
+        long absDividend = Math.abs((long) dividend);
+        long absDivisor = Math.abs((long) divisor);
+        long quotient = 0;
+        while (absDividend >= absDivisor) {
+            long tempDivisor = absDivisor;
+            long multiple = 1;
+            while (absDividend >= (tempDivisor << 1)) {
+                tempDivisor <<= 1;
+                multiple <<= 1;
+            }
+            absDividend -= tempDivisor;
+            quotient += multiple;
+        }
+        return (int) (sign * quotient);
+    }
+    public static void main(String[] args) {
+        int dividend = 10;
+        int divisor = 3;
+        int result = divide(dividend, divisor);
+
+        System.out.println("Quotient: " + result);
+    }
