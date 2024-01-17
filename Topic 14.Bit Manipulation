@@ -331,9 +331,7 @@ Q24) Given an array ‘ARR’ of ‘N’ integers, where all the elements occur 
         }
         return result;
     }
-
-    public static void main(String[] args) {
-        // Example usage:
+        public static void main(String[] args) {
         int n = 5;
         int[] arr = {1, 2, 3, 2, 3};
         int output = missingNumber(n, arr);
