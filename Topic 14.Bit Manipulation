@@ -321,3 +321,24 @@ Q23) You are given two integers 'A' and 'B'.Your objective is to determine the n
         System.out.println("Number of bits to flip: " + result);
     }
 
+Q24) Given an array ‘ARR’ of ‘N’ integers, where all the elements occur an even number of times and only one number occurs an odd number of times.
+      Find and return the number which occurs an odd number of times.
+      
+       public static int missingNumber(int n, int[] arr) {
+        int result = 0;
+        for (int num : arr) {
+            result ^= num;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        // Example usage:
+        int n = 5;
+        int[] arr = {1, 2, 3, 2, 3};
+        int output = missingNumber(n, arr);
+        System.out.println(output);
+    }
+
+
+
