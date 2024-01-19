@@ -250,7 +250,7 @@ public static void main(String[] args) {
     System.out.println(dobby.legs);
 }
 }
-  class Animal{
+ class Animal{
     String color;
     void eat(){
         System.out.println("eats");
@@ -265,3 +265,37 @@ public static void main(String[] args) {
   class Dog extends Mammal{
     String breed;
   }
+
+Q11) Hierarchial Inheritance.
+public class OOps {
+ public static void main(String[] args) {
+ Mammal cow  = new Mammal();
+ fish golden = new fish();
+  cow.walk();
+    golden.swim();
+}
+}
+  class Animal{
+    String color;
+    void eat(){
+        System.out.println("eats");
+    }
+    void breathe(){
+        System.out.println("breathes");
+    }
+  }
+  class Mammal extends Animal{
+    void walk(){
+      System.out.println("walks");
+    }
+  }
+    class fish extends Animal{
+  void swim(){
+    System.out.println("swim");
+  }
+   }
+   class Birds extends Animal{
+  void fly(){
+    System.out.println("fly");
+  }
+}
