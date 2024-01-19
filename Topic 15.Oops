@@ -42,3 +42,19 @@ Q2) Classes and Objects.
     tip= newTip;
   }
   }
+
+Q3) Access Modifier.
+public class OOps {
+  public static void main(String[] args) {
+ BankAccount myAcc =new BankAccount();
+    myAcc.username ="somya";
+    myAcc.setPassword ("abcdes");
+  }
+}
+class BankAccount {
+    public String username;
+     private String password;
+     public void setPassword(String pwd){
+       password =pwd;
+     }
+  }
