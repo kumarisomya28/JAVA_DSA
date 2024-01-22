@@ -173,3 +173,135 @@ Scanner Sc = new Scanner(System.in) ;
 
         }
 
+
+Q12) Write a program that takes a character as input and prints 1, 0, or -1 according to the following rules.
+       1, if the character is an uppercase alphabet (A - Z).
+       0, if the character is a lowercase alphabet (a - z).
+      -1, if the character is not an alphabet.
+       
+     import java.util.Scanner;
+     public class AlphabetCheck {
+      public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a character: ");
+        char userChar = scanner.next().charAt(0);
+        if (Character.isUpperCase(userChar)) {
+            System.out.println("1");
+        } else if (Character.isLowerCase(userChar)) {
+            System.out.println("0");
+        } else {
+            System.out.println("-1");
+        }
+       scanner.close();
+    }
+}
+
+
+Q13) Data type refers to the type of value a variable has and the way the computer interprets it.
+     Each data type has a different size. You’ve studied 5 different data types and the sizes of the data types:
+Integer: 4 bytes
+Long: 8 bytes
+Float: 4 bytes
+Double: 8 bytes
+Character: 1 byte
+You’re given a data type. Print its size in bytes.
+
+public class Solution {
+    public static int dataTypes(String type) {
+        switch (type.toLowerCase()) {
+            case "integer":
+                return 4;
+            case "long":
+                return 8;
+            case "float":
+                return 4;
+            case "double":
+                return 8;
+            case "character":
+                return 1;
+            default:
+                System.out.println("Invalid data type");
+                return -1; 
+        }
+    }
+
+    public static void main(String[] args) {
+          String dataType = "Integer";
+        int size = dataTypes(dataType);
+        if (size != -1) {
+            System.out.println("Size of " + dataType + ": " + size + " bytes");
+        }
+    }
+}
+
+
+Q14) Programming languages have some conditional / decision-making statements that execute when some specific condition is fulfilled.
+     If-else is one of the ways to implement them.You are given two numbers 'a' and 'b'.
+    Compare the numbers and print the relation.
+Print “smaller”, “greater” or “equal” when ‘a’ is smaller than ‘b’, greater than ‘b’, or equal to ‘b’ respectively.
+
+    public class NumberComparison {
+    public static String compareIfElse(int a, int b) {
+        if (a > b) {
+            return "greater";
+        } else if (a < b) {
+            return "smaller";
+        } else {
+            return "equal";
+        }
+    }
+
+    public static void main(String[] args) {
+        int numA = 5;
+        int numB = 3;
+
+        String result = compareIfElse(numA, numB);
+        System.out.println(result);
+    }
+}
+
+Q15) Programming languages have some conditional / decision-making statements that execute when some specific condition is fulfilled.
+Switch-case is one of the ways to implement them.
+In a menu-driven program, the user is given a set of choices of things to do (the menu) and then is asked to select a menu item.
+There are 2 choices in the menu:
+Choice 1 is to find the area of a circle having radius 'r'.
+Choice 2 is to find the area of a rectangle having dimensions 'l' and 'b'.
+You are given the choice 'ch' and an array 'a'.
+If ‘ch’ is 1, ‘a’ contains a single number ‘r’. If ‘ch’ is 2, ‘a’ contains 2 numbers, ‘l’ and ‘b’.
+Consider the choice and print the appropriate area.
+
+public class AreaCalculator {
+    public static double areaSwitchCase(int ch, double[] a) {
+        switch (ch) {
+            case 1:
+                if (a.length >= 1) {
+                    double radius = a[0];
+                    return calculateCircleArea(radius);
+                } else {
+                    System.out.println("Invalid input for choice 1. Missing radius.");
+                    return -1.0; 
+                }
+            case 2:
+                if (a.length >= 2) {
+                    double length = a[0];
+                    double width = a[1];
+                    return calculateRectangleArea(length, width);
+                } else {
+                    System.out.println("Invalid input for choice 2. Missing length or width.");
+                    return -1.0;
+                }
+            default:
+                System.out.println("Invalid choice. Please choose 1 or 2.");
+                return -1.0;
+        }
+    }
+
+    private static double calculateCircleArea(double radius) {
+        return Math.PI * radius * radius;
+    }
+
+    private static double calculateRectangleArea(double length, double width) {
+        return length * width;
+    }
+}
+
