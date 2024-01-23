@@ -358,3 +358,79 @@ Q17) Write a program to input an integer 'n' and print the sum of all its even d
        }
 }
 
+Q18) You are given a number ’n’.Find the number of digits of ‘n’ that evenly divide ‘n’.
+      Note:A digit evenly divides ‘n’ if it leaves no remainder when dividing ‘n’.
+  
+   public class Solution {
+    public static int countDigits(int n) {
+         String numberAsString = Integer.toString(n);
+       int count = 0;
+       for (int i = 0; i < numberAsString.length(); i++) {
+            int digit = Character.getNumericValue(numberAsString.charAt(i));
+            if (digit != 0 && n % digit == 0) {
+                count++;
+            }
+        }
+      return count;
+    }
+
+    public static void main(String[] args) {
+        int n = 12345;
+        int result = countDigits(n);
+        System.out.println("Number of digits that evenly divide 'n': " + result);
+    }
+}
+
+
+Q19) There is a song concert going to happen in the city.
+   The price of each ticket is equal to the number obtained after reversing the bits of a given 32 bits unsigned integer ‘n’.
+
+    public class Solution {
+    public static long reverseBits(long n) {
+        long reversedBits = 0;
+     for (int i = 0; i < 32; i++) {
+            reversedBits <<= 1;
+            reversedBits |= (n & 1);
+            n >>= 1;
+          return reversedBits;
+    }
+      public static void main(String[] args) {
+         long n1 = 2;
+        long n2 = 0;
+        long n3 = 12;
+        System.out.println("Reversed bits for " + n1 + ": " + reverseBits(n1));
+        System.out.println("Reversed bits for " + n2 + ": " + reverseBits(n2));
+        System.out.println("Reversed bits for " + n3 + ": " + reverseBits(n3));
+    }
+}
+}
+
+Q20) Given a signed 32-bit integer x, return x with its digits reversed. 
+    If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+
+    public class Solution {
+    public static int reverse(int x) {
+        int reversed = 0;
+          while (x != 0) {
+            int digit = x % 10;
+      if (reversed > Integer.MAX_VALUE / 10 || (reversed == Integer.MAX_VALUE / 10 && digit > 7)) {
+                return 0; 
+            }
+            if (reversed < Integer.MIN_VALUE / 10 || (reversed == Integer.MIN_VALUE / 10 && digit < -8)) {
+                return 0; // Overflow occurred
+            }
+       reversed = reversed * 10 + digit;
+            x /= 10;
+        }
+    return reversed;
+    }
+
+    public static void main(String[] args) {
+        int x1 = 123;
+        int x2 = -321;
+        int x3 = 120;
+        System.out.println("Reversed integer for " + x1 + ": " + reverse(x1));
+        System.out.println("Reversed integer for " + x2 + ": " + reverse(x2));
+        System.out.println("Reversed integer for " + x3 + ": " + reverse(x3));
+    }
+}
