@@ -361,7 +361,7 @@ Q17) Write a program to input an integer 'n' and print the sum of all its even d
 Q18) You are given a number ’n’.Find the number of digits of ‘n’ that evenly divide ‘n’.
       Note:A digit evenly divides ‘n’ if it leaves no remainder when dividing ‘n’.
   
-   public class Solution {
+  
     public static int countDigits(int n) {
          String numberAsString = Integer.toString(n);
        int count = 0;
@@ -379,13 +379,13 @@ Q18) You are given a number ’n’.Find the number of digits of ‘n’ that ev
         int result = countDigits(n);
         System.out.println("Number of digits that evenly divide 'n': " + result);
     }
-}
+
 
 
 Q19) There is a song concert going to happen in the city.
    The price of each ticket is equal to the number obtained after reversing the bits of a given 32 bits unsigned integer ‘n’.
 
-    public class Solution {
+  
     public static long reverseBits(long n) {
         long reversedBits = 0;
      for (int i = 0; i < 32; i++) {
@@ -403,12 +403,12 @@ Q19) There is a song concert going to happen in the city.
         System.out.println("Reversed bits for " + n3 + ": " + reverseBits(n3));
     }
 }
-}
+
 
 Q20) Given a signed 32-bit integer x, return x with its digits reversed. 
     If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
 
-    public class Solution {
+  
     public static int reverse(int x) {
         int reversed = 0;
           while (x != 0) {
@@ -433,4 +433,55 @@ Q20) Given a signed 32-bit integer x, return x with its digits reversed.
         System.out.println("Reversed integer for " + x2 + ": " + reverse(x2));
         System.out.println("Reversed integer for " + x3 + ": " + reverse(x3));
     }
+
+
+Q21) Check whether a given number ’n’ is a palindrome number.
+   import java.util.Scanner;
+
+   
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number 'n': ");
+        int n = scanner.nextInt();
+        scanner.close();
+     boolean isPalindrome = isPalindrome(n);
+      if (isPalindrome) {
+            System.out.println(n + " is a palindrome number.");
+        } else {
+            System.out.println(n + " is not a palindrome number.");
+        }
+    }
+
+  public static boolean isPalindrome(int n) {
+        int originalNumber = n;
+        int reversedNumber = 0;
+        while (n > 0) {
+            int digit = n % 10;
+            reversedNumber = reversedNumber * 10 + digit;
+            n /= 10;
+        }
+    return originalNumber == reversedNumber;
+    }
+
+Q22) You are given two integers 'n', and 'm'.Calculate 'gcd(n,m)', without using library functions.
+
+    
+public static int calcGCD(int n, int m) {
+      n = Math.abs(n);
+        m = Math.abs(m);
+        while (m != 0) {
+            int temp = m;
+            m = n % m;
+            n = temp;
+        }
+     return n;
+    }
+    
+    public static void main(String[] args) {
+         int n = 24;
+        int m = 18;
+       int gcd = calcGCD(n, m);
+        System.out.println("GCD of " + n + " and " + m + " is: " + gcd);
+    }
 }
+
