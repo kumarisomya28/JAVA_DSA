@@ -485,3 +485,38 @@ public static int calcGCD(int n, int m) {
     }
 }
 
+Q23) You are given an integer 'n'.Return 'true' if 'n' is an Armstrong number, and 'false' otherwise.
+
+       import java.util.Scanner;
+      public class Main {
+	public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+       int n = scanner.nextInt();
+        scanner.close();
+        boolean isArmstrong = isArmstrongNumber(n);
+       if (isArmstrong) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
+    }
+      public static boolean isArmstrongNumber(int n) {
+        int originalNumber = n;
+        int numberOfDigits = countDigits(n);
+        int sum = 0;
+       while (n > 0) {
+            int digit = n % 10;
+            sum += Math.pow(digit, numberOfDigits);
+            n /= 10;
+        }
+      return originalNumber == sum;
+    }
+	public static int countDigits(int n) {
+        int count = 0;
+        while (n > 0) {
+            count++;
+            n /= 10;
+        }
+        return count;
+    }
+}
