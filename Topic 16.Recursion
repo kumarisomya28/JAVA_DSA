@@ -46,7 +46,7 @@ Q3) Print factorial of a number n.
 
     }
 
-Q5) print Nth fibonacci number .
+Q4) print Nth fibonacci number .
 
 
 public static int fib(int n){
