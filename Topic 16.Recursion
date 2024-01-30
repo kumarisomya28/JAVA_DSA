@@ -62,7 +62,7 @@ Q4) Print sum of first n natural numbers.
 
     }
 
-Q4) print Nth fibonacci number .
+Q5) print Nth fibonacci number .
 
    public static int fib(int n){
         if (n==0 || n== 1){
@@ -80,7 +80,7 @@ Q4) print Nth fibonacci number .
     }
 
 
-Q5) Check if the array is sorted or not.
+Q6) Check if the array is sorted or not.
 
 
  public static boolean isSorted(int arr[], int i){
@@ -99,7 +99,7 @@ Q5) Check if the array is sorted or not.
 
     }
 
-Q6) Write  a function to find the first occurence of a number in a array.
+Q7) Write  a function to find the first occurence of an element in a array.
 
       public static int firstOccurence(int arr[],int key, int i){
             if(i== arr.length){
@@ -115,3 +115,23 @@ Q6) Write  a function to find the first occurence of a number in a array.
       int key = 4;
         System.out.println(firstOccurance(arr,key,0));
     }
+
+Q8)  Write  a function to find the last occurence of an element in a array.
+
+  public static int lastOccurence(int arr[], int key, int i) {
+        if(i == arr.length){
+            return -1;
+        }
+
+    int isFound = lastOccurence(arr,key,i+1);
+    if(isFound == -1 && arr[i] == key){
+        return i;
+    }
+        return isFound;
+    }
+
+    public static void main (String[]args){
+            int arr[] = {8, 3, 6, 9, 5, 10, 2, 5, 3};
+            System.out.println(lastOccurence(arr, 5, 0));
+
+        }
