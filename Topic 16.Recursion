@@ -1,7 +1,6 @@
 Q1) Print numbers from n to 1(Decreasing order).
-public class Recursion {
 
-    public static void printDec(int n){
+      public static void printDec(int n){
         if(n==1) {
             System.out.println(n);
             return;
@@ -13,7 +12,7 @@ public class Recursion {
         int n=10;
         printDec(n);
 }
-  }
+  
 
 Q2 Print number in increasing order (1 to n).
 
@@ -46,10 +45,26 @@ Q3) Print factorial of a number n.
 
     }
 
+Q4) Print sum of first n natural numbers.
+
+ public static int calcSum(int n){
+        if( n==1 ){
+            return 1;
+        }
+        int snm1 = calcSum(n-1);
+        int sn = n + snm1;
+        return sn;
+    }
+
+   public static void main(String[] args) {
+        int n=26;
+        System.out.println(calcSum(n));
+
+    }
+
 Q4) print Nth fibonacci number .
 
-
-public static int fib(int n){
+   public static int fib(int n){
         if (n==0 || n== 1){
             return n;
         }
@@ -58,9 +73,7 @@ public static int fib(int n){
         int fn = fib(n-1)+fib(n-2);
         return fn;
     }
-
-
-    public static void main(String[] args) {
+     public static void main(String[] args) {
        int n = 10;
         System.out.println(fib(n));
 
