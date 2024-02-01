@@ -14,7 +14,7 @@ Q1) Print numbers from n to 1(Decreasing order).
 }
   
 
-Q2 Print number in increasing order (1 to n).
+Q2) Print number in increasing order (1 to n).
 
  public static void printinc(int n){
         if(n==1){
