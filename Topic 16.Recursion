@@ -135,3 +135,18 @@ Q8)  Write  a function to find the last occurence of an element in a array.
             System.out.println(lastOccurence(arr, 5, 0));
 
         }
+
+Q9)Print xto the power n. (Brute Force)
+
+ public static int power(int x, int n){
+          //base case
+          if(n==0){
+              return 1;
+          }
+          int xnm1 = power(x,n-1);
+          int xn = x * xnm1;
+          return xn;
+      }
+    public static void main(String[] args) {
+        System.out.println(power(2,10 ));
+    }
