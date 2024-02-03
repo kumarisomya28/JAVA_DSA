@@ -1,0 +1,9 @@
+Q1) Input a year and find whether it is leap year or not.
+     Start
+   Input year
+  if(year mod 4 equals 0) and (year mod 100 not equals 0) or (year mod 400 equals 0)
+  then 
+   Display "leap year"
+   else
+   Display "Not a leap year"
+    End
