@@ -7,3 +7,29 @@ Q1) Input a year and find whether it is leap year or not.
    else
    Display "Not a leap year"
     End
+
+Q2) Take input of a salary, if the salary is greater than 10,000 add bonus 2000, otherwise add bonus as 1000.
+    Start 
+   Input year
+   if salary > 1000
+   salary = salary+2000
+     else
+    salary=salary +1000
+    output salary
+    exit
+
+Q3) Input a number and print whether it is prime or not.
+       start 
+        Input num
+       if num <= 1
+      print "Neither prime  nor composite"
+        c=2
+       while c < num
+     if num % c = 0
+    output "Not prime"
+      exit 
+      c=c+1
+    End while
+  output "Prime"
+    exit
+     
