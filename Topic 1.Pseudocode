@@ -54,4 +54,31 @@ Q5) Take a number as input and print the multiplication table for it.
    End while
       End
 
-Q6) 
+Q6) Take 2 numbers as inputs and find their HCF and LCM.
+    start
+    Declare variables num1, num2, divisor, hcf, lcm
+   Input num1
+   Input num2
+   set hcf=1
+   set divisor=2
+   while divisor <= num1 and divisor <=num2
+   if num1 % divisor ==0 and num2 % divisor ==0
+   set hcf = divisor
+   Increment divisor by 1
+  end while
+    set lcm=(num1*num2)/hcf
+    output "hcf of" + num1 + "and" + num2 + "is" + hcf
+    output "lcm of" + num1 + "and" + num2 + "is" + lcm
+     end
+
+Q7) Keep taking numbers as inputs till the user enters 'x', after that print sum of all.
+      Start
+      Input a
+       x=0
+     while a!=x
+     b+=a
+      Input a
+     output b
+      Stop
+
+
