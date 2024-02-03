@@ -32,4 +32,13 @@ Q3) Input a number and print whether it is prime or not.
     End while
   output "Prime"
     exit
+
+Q4) Take two numbers and print the sum of both.
+      Start
+   Declare variables num1,num2, and sum
+    Input num1
+    Input num2
+   set sum = num1+num2
+    output sum
+      End
      
