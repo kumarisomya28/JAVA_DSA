@@ -41,4 +41,17 @@ Q4) Take two numbers and print the sum of both.
    set sum = num1+num2
     output sum
       End
-     
+
+Q5) Take a number as input and print the multiplication table for it.
+      Start
+    Declare variables num,i,and result
+   Input num
+     set i=1
+    while i <= 10
+  set result = num*i
+  output num + "x" + i + "=" + result
+  Increment i by 1
+   End while
+      End
+
+Q6) 
