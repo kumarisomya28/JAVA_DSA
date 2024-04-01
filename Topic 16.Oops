@@ -103,7 +103,7 @@ class Student{
     }
 }
 
-Q6) Types of constructors.
+Q6) Constructors.
 public class OOps {
   public static void main(String[] args) {
 Student s1 =new Student();
