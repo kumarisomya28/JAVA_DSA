@@ -105,3 +105,20 @@ Scanner sc=new Scanner (System.in);
             System.out.println(a+b);
         }
   }
+
+Q10).Java Program to Illustrate BufferedReader Class.
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class BufferedReader {
+    public static void main(String[] args) throws IOException {
+        java.io.BufferedReader br = new java.io.BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter an integer");
+
+        int a = Integer.parseInt(br.readLine());
+        System.out.println("Enter a String");
+        String b = br.readLine();
+        System.out.println("You have entered--"+ a + "and name as "+ b ) ;
+
+    }
+}
